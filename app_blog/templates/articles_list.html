@@ -6,6 +6,9 @@
     </head>
     <body>
          Публікації <br/>
+         <a href="{% url 'main' %}">
+            <h4>Головна</h4>
+         </a>
          {% if category %} {{ category }} {% endif %}
 
          {% for item in items %}
