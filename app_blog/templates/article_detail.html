@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>{{ item.title }}</title>
-    </head>
-    <body>
-         {% load static %}
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% spaceless %}
+
          <div>
              <ol class="breadcrumb">
                 <li><a href="/">Головна</a></li>
@@ -21,7 +18,7 @@
                     {{ item.pub_date|date:"d E Y"|safe|linebreaks }}
                  </h5>
              </div>
-             <div>
+             <div class="descript">
                  {{ item.description|escape|safe }}
 
                  {% if item.images.all %}
@@ -31,5 +28,5 @@
              </div>
              <div class=‘clearfix’></div>
          </div>
-    </body>
-</html>
+{% endspaceless %}
+{% endblock %}

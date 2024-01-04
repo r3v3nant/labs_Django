@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+@media (max-width: 480px) {
+ h1 {
+     font-size: 18px;
+ }
+}
+body {
+     background-image: url('../img/bg.jpg');
+     background-repeat: repeat-y;
+}
+div > h1 {
+     color: #fff;
+     font-family: 'Ubuntu', sans-serif;
+}
+body > div > nav > div > a > h4 {
+     color: #fff;
+     font-family: 'Ubuntu', sans-serif;
+}
+.article-block {
+     background: #fff;
+     color: #090466;
+     font-family: 'Ubuntu', sans-serif;
+     box-shadow: 2px 2px 1px #ccc;
+     padding: 10px;
+     margin: 10px;
+}
+.article-block a {
+    color: #090466;
+    font-family: 'Ubuntu', sans-serif;
+}
+body > div > div > ol > li {
+    margin: 0 5px;
+}
+div.container-image > img {
+    width: 100%;
+}
+
+h2{
+    color: #3f5216;
+}
+
+
+h3{
+    color: #3f5216;
+}
+
+p{
+    color: #1a5216;
+}
+
+.articles-row{
+    background-color: #fff;
+    display: block;
+    color: black;
+    margin-top: 5px;
+}
+
+.descript{
+color: #2a73a1;
+background-color: #000;
+
+}
